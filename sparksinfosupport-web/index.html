@@ -3,129 +3,151 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SparksInk Consulting</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<title>Sparks Consults Intl | Global Consulting</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+
+html{scroll-behavior:smooth;}
+
+body{
+  background:#0b0b0b;
+  color:#fff;
 }
 
-body {
-  background: #0d0d0d;
-  color: #fff;
+/* NAV */
+header{
+  position:fixed;
+  width:100%;
+  padding:20px 70px;
+  display:flex;
+  justify-content:space-between;
+  backdrop-filter:blur(14px);
+  background:rgba(0,0,0,0.5);
+  z-index:1000;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
-  position: fixed;
-  width: 100%;
-  background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
+header h1{color:#00eaff;font-weight:800;}
+
+nav a{
+  margin-left:30px;
+  text-decoration:none;
+  color:#fff;
 }
 
-header h1 {
-  color: #00e0ff;
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:0 90px;
+  background:radial-gradient(circle at top,#001f2f,#000);
 }
 
-nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
+.hero h2{
+  font-size:4.2rem;
+  max-width:850px;
+  line-height:1.1;
 }
 
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 60px;
-  background: linear-gradient(135deg, #000, #001f2f);
+.hero span{
+  background:linear-gradient(135deg,#00eaff,#0066ff);
+  -webkit-background-clip:text;
+  color:transparent;
 }
 
-.hero h2 {
-  font-size: 3.5rem;
-  max-width: 700px;
-  animation: fadeUp 1s ease;
+.hero p{
+  margin-top:20px;
+  color:#aaa;
+  max-width:600px;
 }
 
-.hero p {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  color: #ccc;
-  max-width: 600px;
-  animation: fadeUp 1.5s ease;
+.btn{
+  margin-top:30px;
+  padding:16px 40px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(135deg,#00eaff,#0066ff);
+  color:#000;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
 }
 
-.btn {
-  margin-top: 30px;
-  padding: 14px 30px;
-  background: #00e0ff;
-  color: #000;
-  border: none;
-  cursor: pointer;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: 0.3s;
+.btn:hover{transform:scale(1.08);}
+
+/* SECTION */
+section{padding:140px 90px;}
+
+.section-title{
+  font-size:2.8rem;
+  margin-bottom:50px;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-  background: #00bcd4;
+/* CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
 }
 
-section {
-  padding: 100px 60px;
+.card{
+  padding:35px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(12px);
+  transition:0.3s;
 }
 
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+.card:hover{transform:translateY(-10px);}
+
+/* CTA */
+.cta{
+  margin:100px;
+  padding:100px;
+  border-radius:25px;
+  text-align:center;
+  background:linear-gradient(135deg,#00eaff,#0066ff);
+  color:#000;
 }
 
-.card {
-  background: #111;
-  padding: 30px;
-  border-radius: 10px;
-  transition: 0.3s;
+/* CONTACT */
+form input, form textarea{
+  width:100%;
+  padding:15px;
+  margin:10px 0;
+  border:none;
+  border-radius:8px;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  background: #1a1a1a;
+/* CALENDLY */
+.calendly{
+  margin-top:40px;
+  border-radius:15px;
+  overflow:hidden;
 }
 
-.cta {
-  text-align: center;
-  background: linear-gradient(135deg, #00e0ff, #0066ff);
-  color: #000;
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:40px;
+  color:#777;
 }
 
-footer {
-  text-align: center;
-  padding: 30px;
-  background: #000;
-  color: #777;
+/* ANIMATION */
+.fade{
+  opacity:0;
+  transform:translateY(40px);
+  transition:0.8s;
 }
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.fade.show{
+  opacity:1;
+  transform:translateY(0);
 }
 </style>
 </head>
@@ -133,73 +155,87 @@ footer {
 <body>
 
 <header>
-  <h1>SparksInk</h1>
+  <h1>Sparks Consults Intl</h1>
   <nav>
     <a href="#services">Services</a>
-    <a href="#about">About</a>
+    <a href="#process">Process</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-  <h2>Transform Your Business With Strategic Marketing & Consulting</h2>
-  <p>We develop unique marketing strategies and help businesses build powerful B2B relationships that drive real growth and long-term success.</p>
-  <button class="btn" onclick="scrollToSection()">Get Free Consultation</button>
+  <h2>We Scale <span>Global Businesses</span> Through Strategy & Influence</h2>
+  <p>Elite consulting and marketing solutions designed to position your business for authority, expansion, and long-term growth.</p>
+  <button class="btn" onclick="scrollToContact()">Book Free Consultation</button>
 </section>
 
-<section id="services">
-  <h2>Our Expertise</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Custom Marketing Strategies</h3>
-      <p>We design innovative strategies tailored to your brand, industry, and growth goals.</p>
-    </div>
-    <div class="card">
-      <h3>B2B Relationship Building</h3>
-      <p>Strengthen partnerships, improve communication, and create long-term business opportunities.</p>
-    </div>
-    <div class="card">
-      <h3>Brand Positioning</h3>
-      <p>Stand out in competitive markets with a clear, powerful brand identity.</p>
-    </div>
-    <div class="card">
-      <h3>Growth Consulting</h3>
-      <p>Scale your business with data-driven insights and proven consulting strategies.</p>
-    </div>
+<!-- SERVICES -->
+<section id="services" class="fade">
+  <h2 class="section-title">Our Services</h2>
+  <div class="grid">
+    <div class="card"><h3>Strategic Marketing</h3><p>High-impact campaigns built for growth.</p></div>
+    <div class="card"><h3>B2B Consulting</h3><p>Develop high-value partnerships globally.</p></div>
+    <div class="card"><h3>Global Expansion</h3><p>Enter new markets with precision.</p></div>
+    <div class="card"><h3>Brand Authority</h3><p>Position your company as a leader.</p></div>
   </div>
 </section>
 
-<section id="about">
-  <h2>About SparksInk</h2>
-  <p style="max-width:700px; margin-top:20px; color:#ccc;">
-    SparksInk is a premium marketing and consulting firm focused on helping businesses unlock growth through innovation, strategy, and strong business relationships. We work across industries, providing tailored solutions that help brands stand out, connect, and scale effectively.
-  </p>
+<!-- PROCESS -->
+<section id="process" class="fade">
+  <h2 class="section-title">Our Process</h2>
+  <div class="grid">
+    <div class="card"><h3>01. Analyze</h3><p>Understand your business and market.</p></div>
+    <div class="card"><h3>02. Strategize</h3><p>Create a custom roadmap.</p></div>
+    <div class="card"><h3>03. Execute</h3><p>Implement high-performance strategies.</p></div>
+    <div class="card"><h3>04. Scale</h3><p>Optimize and expand growth.</p></div>
+  </div>
 </section>
 
-<section class="cta">
-  <h2>Ready to Grow Your Business?</h2>
-  <p>Book your free consultation and start building a strategy that delivers results.</p>
-  <button class="btn" onclick="scrollToSection()">Start Now</button>
+<!-- CTA -->
+<section class="cta fade">
+  <h2>Ready to Expand Your Business Globally?</h2>
+  <p>Book your free consultation today.</p>
+  <button class="btn" onclick="scrollToContact()">Start Now</button>
 </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required style="width:100%; padding:10px; margin:10px 0;">
-    <input type="email" placeholder="Your Email" required style="width:100%; padding:10px; margin:10px 0;">
-    <textarea placeholder="Tell us about your business..." style="width:100%; padding:10px; margin:10px 0;"></textarea>
-    <button class="btn" type="submit">Submit</button>
+<!-- CONTACT -->
+<section id="contact" class="fade">
+  <h2 class="section-title">Contact & Booking</h2>
+
+  <!-- EMAIL FORM -->
+  <form action="https://formspree.io/f/YOUR-ID" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Tell us about your business..."></textarea>
+    <button class="btn">Send Message</button>
   </form>
+
+  <!-- CALENDLY -->
+  <div class="calendly">
+    <iframe src="calendly.com/sparks-info-support" width="100%" height="500" frameborder="0"></iframe>
+  </div>
+
 </section>
 
 <footer>
-  <p>© 2026 SparksInk Consulting. All rights reserved.</p>
+  <p>© 2026 Sparks Consults Intl</p>
 </footer>
 
 <script>
-function scrollToSection() {
-  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+function scrollToContact(){
+  document.getElementById("contact").scrollIntoView({behavior:"smooth"});
 }
+
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
 </script>
 
 </body>
