@@ -9,123 +9,123 @@
 
 <style>
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-background: #0d0d0d;
-color: #fff;
+  background: #0d0d0d;
+  color: #fff;
 }
 
 header {
-display: flex;
-justify-content: space-between;
-padding: 20px 50px;
-position: fixed;
-width: 100%;
-background: rgba(0,0,0,0.7);
-backdrop-filter: blur(10px);
-z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
 header h1 {
-color: #00e0ff;
+  color: #00e0ff;
 }
 
 nav a {
-margin-left: 25px;
-text-decoration: none;
-color: #fff;
-font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
 }
 
 .hero {
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 0 60px;
-background: linear-gradient(135deg, #000, #001f2f);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60px;
+  background: linear-gradient(135deg, #000, #001f2f);
 }
 
 .hero h2 {
-font-size: 3.5rem;
-max-width: 700px;
-animation: fadeUp 1s ease;
+  font-size: 3.5rem;
+  max-width: 700px;
+  animation: fadeUp 1s ease;
 }
 
 .hero p {
-margin-top: 20px;
-font-size: 1.2rem;
-color: #ccc;
-max-width: 600px;
-animation: fadeUp 1.5s ease;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 600px;
+  animation: fadeUp 1.5s ease;
 }
 
 .btn {
-margin-top: 30px;
-padding: 14px 30px;
-background: #00e0ff;
-color: #000;
-border: none;
-cursor: pointer;
-border-radius: 6px;
-font-weight: bold;
-transition: 0.3s;
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: #00e0ff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .btn:hover {
-transform: scale(1.05);
-background: #00bcd4;
+  transform: scale(1.05);
+  background: #00bcd4;
 }
 
 section {
-padding: 100px 60px;
+  padding: 100px 60px;
 }
 
 .services {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
 }
 
 .card {
-background: #111;
-padding: 30px;
-border-radius: 10px;
-transition: 0.3s;
+  background: #111;
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
 .card:hover {
-transform: translateY(-10px);
-background: #1a1a1a;
+  transform: translateY(-10px);
+  background: #1a1a1a;
 }
 
 .cta {
-text-align: center;
-background: linear-gradient(135deg, #00e0ff, #0066ff);
-color: #000;
+  text-align: center;
+  background: linear-gradient(135deg, #00e0ff, #0066ff);
+  color: #000;
 }
 
 footer {
-text-align: center;
-padding: 30px;
-background: #000;
-color: #777;
+  text-align: center;
+  padding: 30px;
+  background: #000;
+  color: #777;
 }
 
 @keyframes fadeUp {
-from {
-opacity: 0;
-transform: translateY(40px);
-}
-to {
-opacity: 1;
-transform: translateY(0);
-}
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>
 </head>
@@ -133,72 +133,72 @@ transform: translateY(0);
 <body>
 
 <header>
-<h1>SparksInk</h1>
-<nav>
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
+  <h1>SparksInk</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
-<h2>Transform Your Business With Strategic Marketing & Consulting</h2>
-<p>We develop unique marketing strategies and help businesses build powerful B2B relationships that drive real growth and long-term success.</p>
-<button class="btn" onclick="scrollToSection()">Get Free Consultation</button>
+  <h2>Transform Your Business With Strategic Marketing & Consulting</h2>
+  <p>We develop unique marketing strategies and help businesses build powerful B2B relationships that drive real growth and long-term success.</p>
+  <button class="btn" onclick="scrollToSection()">Get Free Consultation</button>
 </section>
 
 <section id="services">
-<h2>Our Expertise</h2>
-<div class="services">
-<div class="card">
-<h3>Custom Marketing Strategies</h3>
-<p>We design innovative strategies tailored to your brand, industry, and growth goals.</p>
-</div>
-<div class="card">
-<h3>B2B Relationship Building</h3>
-<p>Strengthen partnerships, improve communication, and create long-term business opportunities.</p>
-</div>
-<div class="card">
-<h3>Brand Positioning</h3>
-<p>Stand out in competitive markets with a clear, powerful brand identity.</p>
-</div>
-<div class="card">
-<h3>Growth Consulting</h3>
-<p>Scale your business with data-driven insights and proven consulting strategies.</p>
-</div>
-</div>
+  <h2>Our Expertise</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Custom Marketing Strategies</h3>
+      <p>We design innovative strategies tailored to your brand, industry, and growth goals.</p>
+    </div>
+    <div class="card">
+      <h3>B2B Relationship Building</h3>
+      <p>Strengthen partnerships, improve communication, and create long-term business opportunities.</p>
+    </div>
+    <div class="card">
+      <h3>Brand Positioning</h3>
+      <p>Stand out in competitive markets with a clear, powerful brand identity.</p>
+    </div>
+    <div class="card">
+      <h3>Growth Consulting</h3>
+      <p>Scale your business with data-driven insights and proven consulting strategies.</p>
+    </div>
+  </div>
 </section>
 
 <section id="about">
-<h2>About SparksInk</h2>
-<p style="max-width:700px; margin-top:20px; color:#ccc;">
-SparksInk is a premium marketing and consulting firm focused on helping businesses unlock growth through innovation, strategy, and strong business relationships. We work across industries, providing tailored solutions that help brands stand out, connect, and scale effectively.
-</p>
+  <h2>About SparksInk</h2>
+  <p style="max-width:700px; margin-top:20px; color:#ccc;">
+    SparksInk is a premium marketing and consulting firm focused on helping businesses unlock growth through innovation, strategy, and strong business relationships. We work across industries, providing tailored solutions that help brands stand out, connect, and scale effectively.
+  </p>
 </section>
 
 <section class="cta">
-<h2>Ready to Grow Your Business?</h2>
-<p>Book your free consultation and start building a strategy that delivers results.</p>
-<button class="btn" onclick="scrollToSection()">Start Now</button>
+  <h2>Ready to Grow Your Business?</h2>
+  <p>Book your free consultation and start building a strategy that delivers results.</p>
+  <button class="btn" onclick="scrollToSection()">Start Now</button>
 </section>
 
 <section id="contact">
-<h2>Contact Us</h2>
-<form>
-<input type="text" placeholder="Your Name" required style="width:100%; padding:10px; margin:10px 0;">
-<input type="email" placeholder="Your Email" required style="width:100%; padding:10px; margin:10px 0;">
-<textarea placeholder="Tell us about your business..." style="width:100%; padding:10px; margin:10px 0;"></textarea>
-<button class="btn" type="submit">Submit</button>
-</form>
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required style="width:100%; padding:10px; margin:10px 0;">
+    <input type="email" placeholder="Your Email" required style="width:100%; padding:10px; margin:10px 0;">
+    <textarea placeholder="Tell us about your business..." style="width:100%; padding:10px; margin:10px 0;"></textarea>
+    <button class="btn" type="submit">Submit</button>
+  </form>
 </section>
 
 <footer>
-<p>© 2026 SparksInk Consulting. All rights reserved.</p>
+  <p>© 2026 SparksInk Consulting. All rights reserved.</p>
 </footer>
 
 <script>
 function scrollToSection() {
-document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
 }
 </script>
 
